@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Lunes's world</title>
+  <style>
+    /* CSS styles for the header section */
+    header {
+      text-align: center;
+      margin-top: 10pt;
+    }
+
+    h1 {
+      font-family: Helvetica;
+      font-size: 50pt;
+    }
+
+    .header-line {
+      width: 100%;
+      height: 5pt;
+      background-color: black;
+    }
+
+    /* CSS styles for the navigator section */
+    .navigator {
+      display: flex;
+      justify-content: center;
+    }
+
+    .navigator-column {
+      flex-basis: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+    }
+
+    .navigator-column img {
+      width: 640px;
+      height: 756px;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .navigator-column h2 {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 640px;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      opacity: 0.7;
+      margin-top: -70px;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    /* CSS styles for hover and click effects */
+    .navigator-column:hover img,
+    .navigator-column:focus img {
+      opacity: 0.5;
+    }
+
+    .navigator-column:hover h2,
+    .navigator-column:focus h2 {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-line"></div>
+    <h1>Welcome to Lunes's world</h1>
+    <div class="header-line"></div>
+  </header>
+
+  <div class="navigator">
+    <div class="navigator-column">
+      <a href="#audio-section">
+        <img src="https://images.pexels.com/photos/4035271/pexels-photo-4035271.jpeg" alt="Audio Photo">
+        <h2>Audio</h2>
+      </a>
+    </div>
+    <div class="navigator-column">
+      <a href="#visual-section">
+        <img src="https://images.pexels.com/photos/17265786/pexels-photo-17265786.jpeg" alt="Visual Photo">
+        <h2>Visual</h2>
+      </a>
+    </div>
+    <div class="navigator-column">
+      <a href="#vision-section">
+        <img src="https://images.pexels.com/photos/17130375/pexels-photo-17130375.jpeg" alt="Vision Photo">
+        <h2>Vision</h2>
+      </a>
+    </div>
+  </div>
+
+  <!-- Following content sections go here -->
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Lunes's world</title>
+  <style>
+    /* CSS styles for the header section (same as before) */
+
+    /* CSS styles for the contact me section */
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .photo-rectangle {
+      width: 1130px;
+      height: 430px;
+      margin-bottom: 20pt;
+      align-items: center;
+      margin-left: 350pt; /* Added margin-left auto to move the photo to the right */
+    }
+    
+    .photo-rectangle img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .line {
+      width: 100%;
+      height: 3pt;
+      background-color: black;
+    }
+
+    .blocks {
+      display: flex;
+      justify-content: top;
+      align-items: flex-start;
+      margin-top: 0pt;
+      margin-bottom: 0pt;
+    }
+
+    .block {
+      width: calc((100% - 5pt * 2) / 3); /* Adjusted width calculation */
+      position: relative; /* Added position relative */
+    }
+
+    .block:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -5pt; /* Half the width of the line */
+      bottom: 0; /* Added bottom property */
+      height: 100%;
+      width: 3pt;
+      background-color: black;
+    }
+
+    .photo-block {
+      width: 480px;
+      height: 600px;
+      margin-bottom: 5pt;
+      display: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .photo-block img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .description-block {
+      width: 500px;
+      height: 600px;
+      margin-left: 10pt;
+      #margin-right: 40pt;
+      margin-bottom: 5pt;
+      font-family: Helvetica;
+      font-size: 10pt;
+      text-align: justify;
+    }
+
+    .contact-me-block {
+      flex-grow: 1;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 20pt;
+    }
+
+    .contact-title {
+      font-size: 30pt;
+      font-weight: bold;
+      margin-bottom: 20pt;
+    }
+
+    .icons {
+      display: flex;
+      gap: 20pt;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    /* CSS styles for hover and click effects (same as before) */
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Header section (same as before) -->
+  </header>
+
+  <section class="contact-section">
+    <div class="photo-rectangle">
+      <img src="https://images.pexels.com/photos/1382393/pexels-photo-1382393.jpeg" alt="Contact Photo">
+    </div>
+  
+    <div class="line"></div>
+
+    <div class="blocks">
+      <div class="block photo-block">
+        <img src="https://images.pexels.com/photos/5238645/pexels-photo-5238645.jpeg" alt="Contact Photo 1">
+      </div>
+      <div class="block description-block">
+        <p>
+          Lunes es una joven con una personalidad vibrante y una presencia cautivadora. Posee un aire de curiosidad y entusiasmo por la vida que atrae a las personas hacia ella. Lunes tiene una sonrisa radiante que ilumina su rostro, y sus ojos brillan con inteligencia y calidez.
+
+          En cuanto a su apariencia, Lunes tiene una actitud elegante y gracil. Tiene cabello largo y fluido que cae en cascada por su espalda, y su estilo refleja su individualidad y creatividad. A Lunes le gusta lucir atuendos coloridos y expresivos que reflejan su personalidad vibrante.
+
+          Mas alla de sus atributos externos, Lunes tiene una naturaleza amable y compasiva. Posee una empatia genuina hacia los demas y siempre esta dispuesta a tender una mano amiga. Lunes tiene una mente curiosa y una sed de conocimiento, siempre buscando ampliar su comprension del mundo que la rodea.
+
+          Lunes es conocida por sus talentos artisticos, ya sea a traves de la pintura, la escritura o la musica. Se expresa creativamente, utilizando diversos medios para dar vida a su imaginacion. Lunes tiene un ojo agudo para la belleza y encuentra inspiracion en el mundo que la rodea, infundiendo sus creaciones con un toque de magia.
+          -Chatgpt
+        </p>
+      </div>
+      <div class="block contact-me-block">
+        <h2 class="contact-title">Contact Me</h2>
+        <div class="icons">
+          <a href="#" class="icon"><img src="discord-icon.png" alt="Discord"></a>
+          <a href="#" class="icon"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="#" class="icon"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#" class="icon"><img src="email-icon.png" alt="Email"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+  </section>
+
+  <!-- Following content -->
+</body>
+</html>
